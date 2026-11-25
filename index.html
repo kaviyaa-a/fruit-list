@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+
+    <style>
+        .box {
+            max-width: 450px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .box .row .fruit {
+            border: solid rgb(210, 210, 210) 1px;
+            border-radius: 7px;
+        }
+
+        #error{
+            font-size: 12px;
+            display: none;
+            color: brown;
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+
+        #trash {
+            border: none;
+        }
+
+        .container div {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .trash {
+            border: none;
+            ;
+            background: none;
+        }
+
+        .trash:active {
+            transform: scale(1.20);
+        }
+        .row .col{
+            border: solid rgb(210,210,210) 1px;
+            padding: 5px;
+            border-radius: 7px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid border rounded-3 box">
+        <div class="row gap-3 ms-1">
+            <input class="col-9 fruit" type="text" placeholder="Enter a fruit name">
+            <button class="col-2 btn btn-secondary addBtn">Add</button>
+        </div>
+         <p id="error"></p>
+
+        <div class="row p-3 gap-2">
+            <p class="col" id="all"></p>
+            <p class="col" id="active"></p>
+            <p class="col" id="done"></p>
+        </div>
+
+        <div class="container mt-1">
+            <div class="my-2">
+                <input type="checkbox" name="check" id="">
+                <h6 id="Inputs">Apple</h6>
+                <button class="trash"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+
+        </div>
+
+        <button class="btn btn-danger d-block mx-auto mt-3">Reset</button>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
